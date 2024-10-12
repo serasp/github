@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+  </head>
+  <body class="bg-secondary">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/LOGO_FINAL.png" alt="brand logo" class="w-25" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-grey fw-bolder"
+                href="#sidebarAbout"
+                data-bs-toggle="offcanvas"
+                role="button"
+                aria-controls="sidebar"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-grey fw-bolder"
+                href="#sidebarContact"
+                data-bs-toggle="offcanvas"
+                role="button"
+                aria-controls="sidebar"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-grey fw-bolder" href="login.html"
+                >Logout</a
+              >
+            </li>
+            <li class="nav-item">
+              <form class="d-flex nav-item" action="/search" method="GET">
+                <div class="input-group searchBar">
+                  <input
+                    type="search"
+                    name="q"
+                    class="form-control"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <span class="input-group-text" id="searchIcon">
+                    <i class="bi bi-search"></i>
+                  </span>
+                </div>
+              </form>
+            </li>
+
+            <li class="nav-item">
+              <a href="user-profile.html" class="nav-link text-grey fw-bolder mx-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                  />
+                </svg>
+                Richard
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Artist">
+        
+        <div class="container-lg">
+            <div class="text-center">
+              <h2 class="my-5 display-6 lead fw-bolder">LOCAL ARTIST</h2>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row my-5 align-items-center justify-content-center">
+                        <div class="col-8 col-lg-4 col-xl-3">
+                         <div class="card my-2">
+                          <img src="images/DRACHIR.jpg" alt="richard">
+                           <div class="card-body text-center py-4">
+                               <h4 class="card-title fw-bold my-2 text-center lead">Drachir Seraspe</h4>
+                               <a href="#sidebarSeraspe" class="btn btn-outline-dark my-2 lead fw-bold" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                                Check Artist
+                               </a>
+                           </div>
+                         </div>
+                        </div>
+        
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                             <img src="images/azal.jpg" alt="azal" class="d-block">
+                              <div class="card-body text-center py-4">
+                                  <h4 class="card-title fw-bold my-2 text-center lead">Azalea Rosziel Byakuya</h4>
+                                  <a href="#sidebarAzalea" class="btn btn-outline-dark my-2 lead fw-bold"data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Check Artist</a>
+                              </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                             <img src="images/gabriel.jpg" alt="gabriel" class="d-block">
+                              <div class="card-body text-center py-4">
+                                  <h4 class="card-title fw-bold my-2 text-center lead">Jay Gabriel </h4>
+                                  <a href="#sidebarGabriel" class="btn btn-outline-dark my-2 lead fw-bold"data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Check Artist</a>
+                              </div>
+                            </div>
+                        </div> 
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row my-5 align-items-center justify-content-center">
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                                <img src="images/SAMPLE_PIC.png" alt="richard" class="d-block">
+                                 <div class="card-body text-center py-4">
+                                     <h4 class="card-title fw-bold my-2 text-center lead">Artist Name</h4>
+                                     <a href="#" class="btn btn-outline-dark my-2 lead fw-bold">Check Artist</a>
+                                 </div>
+                               </div>
+                        </div>    
+        
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                                <img src="images/SAMPLE_PIC.png" alt="richard" class="d-block">
+                                 <div class="card-body text-center py-4">
+                                     <h4 class="card-title fw-bold my-2 text-center lead">Artist Name</h4>
+                                     <a href="#" class="btn btn-outline-dark my-2 lead fw-bold">Check Artist</a>
+                                 </div>
+                               </div>
+                        </div>
+        
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                                <img src="images/SAMPLE_PIC.png" alt="richard" class="d-block">
+                                 <div class="card-body text-center py-4">
+                                     <h4 class="card-title fw-bold my-2 text-center lead">Artist Name</h4>
+                                     <a href="#" class="btn btn-outline-dark my-2 lead fw-bold">Check Artist</a>
+                                 </div>
+                               </div>
+                        </div>  
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row my-5 align-items-center justify-content-center">
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                                <img src="images/SAMPLE_PIC.png" alt="richard" class="d-block">
+                                 <div class="card-body text-center py-4">
+                                     <h4 class="card-title fw-bold my-2 text-center lead">Artist Name</h4>
+                                     <a href="#" class="btn btn-outline-dark my-2 lead fw-bold">Check Artist</a>
+                                 </div>
+                               </div>
+                        </div>
+        
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                                <img src="images/SAMPLE_PIC.png" alt="richard" class="d-block">
+                                 <div class="card-body text-center py-4">
+                                     <h4 class="card-title fw-bold my-2 text-center lead">Artist Name</h4>
+                                     <a href="#" class="btn btn-outline-dark my-2 lead fw-bold">Check Artist</a>
+                                 </div>
+                               </div>
+                        </div>
+        
+                        <div class="col-8 col-lg-4 col-xl-3">
+                            <div class="card my-2">
+                                <img src="images/SAMPLE_PIC.png" alt="richard" class="d-block">
+                                 <div class="card-body text-center py-4">
+                                     <h4 class="card-title fw-bold my-2 text-center lead">Artist Name</h4>
+                                     <a href="#" class="btn btn-outline-dark my-2 lead fw-bold">Check Artist</a>
+                                 </div>
+                               </div>
+                        </div>  
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarSeraspe" aria-labelledby="sidebar-label">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title lead fw-bolder mt-3">Drahcir Jay Seraspe </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <ul>
+                <li>Anime Artist</li>
+                <li>Manga Artist</li>
+                <li>Digital Artist</li>
+                <li>Feel free to reach out to me on my social media for inquiries.</li>
+                <li>Philippines</li>
+              </ul>
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Socials
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="https://www.facebook.com/drahcirjay.seraspe.3" target="_blank"><i class="bi bi-facebook mx-2"></i>DracherArts</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-instagram mx-2"></i>DracherArts</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-x mx-2"></i>DracherArts</a></li>
+              </ul>
+              <a href="bidding_drachir.html" class="btn btn-outline-secondary my-2 lead fw-bold border-2">Bid Now</a>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarAzalea" aria-labelledby="sidebar-label">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title lead fw-bolder mt-3">Azalea Rosziel Byakuya </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <ul>
+                <li>Floral Artist</li>
+                <li>Welcome to my art realm | I’m busy eating rainbows</li>
+                <li>Philippines</li>
+              </ul>
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Socials
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="https://www.facebook.com/azakyuuun.byakuya" target="_blank"><i class="bi bi-facebook mx-2"></i>AzeleaArts</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-instagram mx-2"></i>AzeleaArts</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-x mx-2"></i>AzeleaArts</a></li>
+              </ul>
+              <a href="bidding_azalea.html" class="btn btn-outline-secondary my-2 lead fw-bold border-2">Bid Now</a>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarGabriel" aria-labelledby="sidebar-label">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title lead fw-bolder mt-3">Jay Gabriel </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <ul>
+                <li>Digital Artist</li>
+                <li>Graphics Designer @RulesOfSurvival</li>
+                <li>Philippines</li>
+              </ul>
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Socials
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="https://www.facebook.com/ushouldntbereadingthis" target="_blank"><i class="bi bi-facebook mx-2"></i>GabrielArts</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-instagram mx-2"></i>GabrielArts</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-x mx-2"></i>GabrielArts</a></li>
+              </ul>
+              <a href="bidding_gab.html" class="btn btn-outline-secondary my-2 lead fw-bold border-2">Bid Now</a>
+            </div>
+          </div>
+
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="1" id="sidebarAbout" aria-labelledby="sidebar-label">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title lead fw-bolder display-2 about-heading">ArtBidHub</div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body aboutBtn-font">
+        ArtBidHub is a platform for artists to showcase their work and for art enthusiasts to bid on unique creations, fostering creativity and community connection.
+      </div>
+  </div>
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="sidebarContact" aria-labelledby="sidebar-label">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title lead fw-bolder display-2 contact-heading">ArtBidHub</div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body contactBtn-font">
+          <ul>
+              <li>Email: <a href="mailto:support@artbidhub.com">support@artbidhub.com</a>
+                <ul>
+                  <li>Reach out to us for any inquiries, issues, or feedback related to our platform.</li>
+                </ul>
+              </li>
+              <li>Phone: +639772318917
+              </li>
+              <li>Social Media:
+                <ul>
+                  <li>Instagram: @ArtBidHub</li>
+                  <li>Facebook: @ArtBidHub</li>
+                </ul>
+      </div>
+  </div>
+
+
+    
+  <footer class="bg-dark text-white text-center py-3">
+    <p>Follow us on:</p>
+    <a href="https://facebook.com/ArtBidHub" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+    <a href="https://instagram.com/ArtBidHub" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+    <p>&copy; 2024 ArtBidHub. All Rights Reserved.</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

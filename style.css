@@ -1,0 +1,69 @@
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: transform.5s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: transform.5s;
+}
+.local-artist-heading {
+  font-family: monospace;
+  color: #ebe9e9;
+  font-size: 40px;
+}
+.aboutBtn-font {
+  font-family: monospace;
+  .search-input {
+  width: 100%; 
+  max-width: 300px; 
+  padding: 8px; 
+}
+
+}
+.searchBar {
+  margin-left: 20px; 
+  
+}
+
+
+.searchBar #searchIcon i {
+  font-size: 22px; /* Adjust this value to make the icon larger or smaller */
+}
+.contactBtn-font {
+  font-family: monospace;
+}
+.about-heading {
+  font-size: 40px;
+}
+.contact-heading {
+  font-size: 40px;
+}
+.nav-link {
+  font-family: monospace;
+  font-size: 18px; 
+  font-weight: bold; 
+  color: grey; 
+}
+
+.nav-link:hover {
+  color: darkgrey; 
+}
+
+/* loginForm */
+.loginBody{
+   font-family: monospace;
+   font-size: 18px;
+}
+.card-title{
+  margin-bottom: 40px;
+}
+/* SignupForm */
+.signupBody{
+  font-family: monospace;
+  font-size: 18px;
+}
+
